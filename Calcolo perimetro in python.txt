@@ -1,0 +1,28 @@
+while True:
+    print("Scegli il perimetro da calcolare:")
+    print("1- Quadrato")
+    print("2- Cerchio")
+    print("3- Rettangolo")
+    scelta = input("Inserisci la tua scelta: ")
+    if scelta in ["1", "2", "3"]:
+        break
+    else:
+        print("\nErrore!!! Inserisci 1 | 2 | 3 .\n")
+if scelta=="1":
+    print("\nHAI SCELTO DI CALCOLARE IL PERIMETRO DEL QUADRATO\n")
+    lato=int(input("Inserisci il lato in cm: " ))
+    perimetro_quadrato= 2 * lato
+    print(f"Il perimetro del Quadrato è: {perimetro_quadrato} cm")
+elif scelta=="2":
+    print("\nHAI SCELTO DI CALCOLARE IL PERIMETRO DEL CERCHIO\n")
+    import math
+    pi_value=math.pi
+    raggio=int(input("Inserisci il raggio in cm: "))
+    perimetro_cerchio=2 * pi_value * raggio
+    print(f"il perimetro del Cerchio è: {perimetro_cerchio} cm")
+elif scelta=="3":
+    print("\nHAI SCELTO DI CALCOLARE IL PERIMETRO DEL RETTANGOLO\n")
+    base=int(input("Inserisci la base in cm: "))
+    altezza=int(input("Inserisci l'altezza in cm: "))
+    perimetro_rettangolo= (base * 2) + (altezza * 2)
+    print(f"Il perimetro del Rettangolo è: {perimetro_rettangolo} cm")
